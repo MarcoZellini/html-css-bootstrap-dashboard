@@ -32,7 +32,8 @@
                     </a>
 
                     <div class="input-group">
-                        <span class="input-group-text ms_bg_light_emphasys" id="basic-addon1">
+                        <span class="input-group-text ms_bg_light_emphasys"
+                            id="basic-addon1">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
                         <input type="search"
@@ -95,7 +96,7 @@
         <div id="site_bottom" class="d-flex">
 
             <div id="sidebar"
-                class="ms_bg_dark_blue d-flex flex-column justify-content-between">
+                class="ms_bg_dark_primary d-flex flex-column justify-content-between">
                 <div id="sidebar_top">
                     <nav class="navbar navbar-expand">
                         <div class="container-fluid justify-content-center py-2">
@@ -148,7 +149,168 @@
 
             <main id="site_main">
 
-                <div id="main_top"></div>
+                <div id="main_top" class="bg-primary text-white">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md order-md-3">
+                                <div class="ms_card py-4">
+                                    <span>Nuovo Studente</span>
+                                    <a data-bs-toggle="offcanvas"
+                                        href="#offcanvas"
+                                        class="btn btn-outline-light fs-3 ms-3 px-2 py-1 lh-0">
+                                        <i class="fas fa-plus    "></i>
+                                    </a>
+
+                                    <div class="offcanvas offcanvas-end ms_w_100 ms_w_lg_50"
+                                        id="offcanvas">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Inserisci
+                                                un nuovo studente</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <form>
+                                                <div class="row">
+                                                    
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Nome</label>
+                                                            <input type="text" class="form-control">
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Cognome</label>
+                                                            <input type="text" class="form-control">
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Email</label>
+                                                            <div class="input-group">
+                                                            <span class="input-group-text">
+                                                                <i class="fas fa-at"></i>
+                                                            </span>
+                                                            <input type="email" class="form-control">
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Password</label>
+                                                            <input type="password" class="form-control">
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Indirizzo</label>
+                                                            <input type="text" class="form-control">
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Città</label>
+                                                            <input type="text" class="form-control">
+                                                            
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Stato</label>
+                                                            <div class="dropdown">
+                                                                <input type="button" href="#" class="form-control dropdown-toggle" data-bs-toggle="dropdown" value="Choose...">
+                                                                <div class="dropdown-menu dropdown-menu-center">
+                                                                    <div class="dropdown-item">Italia</div>
+                                                                    <div class="dropdown-item">Francia</div>
+                                                                    <div class="dropdown-item">Spagna</div>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">CAP</label>
+                                                            <input type="number" class="form-control">
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Default file input example</label>
+
+                                                            <div class="input-group">
+                                                                <a class="input-group-text btn btn-light">
+                                                                    Scegli file
+                                                                </a>
+                                                                <input type="input" class="form-control">
+                                                            </div>
+
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <input type="checkbox"> Premi qui per continuare
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <input type="submit" class="btn btn-primary" value="Sign it">
+                                                            <input type="reset" class="btn btn-warning" value="reset">
+                                                          </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /.ms_card -->
+                            </div>
+                            <!-- /.col-12 col-md -->
+                            <div class="col-12 col-md">
+                                <div class="ms_card py-4">
+                                    <div>
+                                        <span class="fs-1">Boolean</span>
+                                        <span class="badge ms_bg_primary fs-6">Piano
+                                            blaze</span>
+                                    </div>
+
+                                    <div class="app d-flex align-items-center py-2">
+                                        <div class="badge ms_bg_primary">3 app</div>
+                                        <i class="fa-solid fa-angles-right mx-2"></i>
+
+                                        <div class="show_list d-block d-xl-none">
+                                            <div class="badge ms_bg_primary">+</div>
+                                        </div>
+
+                                        <ul
+                                            class="app_list list-unstyled d-none d-xl-flex mt-auto mb-auto me-auto">
+                                            <li class="badge ms_bg_primary">Boolean
+                                                Mobile App</li>
+                                            <li class="badge ms_bg_primary mx-1">Boolean
+                                                Web App</li>
+                                            <li class="badge ms_bg_primary mx-1">Boolean
+                                                Blog App</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!-- /.ms_card -->
+                            </div>
+                            <!-- /.col-12 col-md -->
+                            <div class="col-12 col-md">
+                                <div class="ms_card py-4">
+                                    <div>Studenti online negli ultimi 30 minuti</div>
+                                    <div class="n_online">125</div>
+                                </div>
+                                <!-- /.ms_card -->
+                            </div>
+                            <!-- /.col-12 col-md -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
                 <!-- /#main_top -->
 
                 <div id="main_bottom">
